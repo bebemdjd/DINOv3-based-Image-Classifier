@@ -122,9 +122,9 @@ python dense_features_PCA.py
 
 The classifier consists of:
 
-1. ** Frozen DINOv3 Backbone**: Pre-trained ViT-B/16 (embedding dim: 768)
-2. ** Feature Aggregation**: Concatenates features from the last N transformer blocks
-3. ** Linear Classifier**: Single linear layer for classification
+1. **Frozen DINOv3 Backbone**: Pre-trained ViT-B/16 (embedding dim: 768)
+2. **Feature Aggregation**: Concatenates features from the last N transformer blocks
+3. **Linear Classifier**: Single linear layer for classification
 
  **Feature dimension calculation:**
 - Without avgpool: `n_last_blocks  768` (e.g., 4  768 = 3072)
@@ -197,11 +197,11 @@ Models are automatically saved:
 
 ##  Performance Tips
 
-1. ** Batch Size**: Start with 96 and adjust based on GPU memory
-2. ** Learning Rate**: 0.01 works well for linear classifiers with SGD
-3. ** Feature Layers**: Using 4 last blocks (`n_last_blocks=4`) is a good balance
-4. ** Gradient Clipping**: Set to 1.0 to prevent gradient explosion
-5. ** Validation Interval**: Validate every epoch for small datasets
+1. Batch Size: Start with 96 and adjust based on GPU memory
+2. Learning Rate: 0.01 works well for linear classifiers with SGD
+3. Feature Layers: Using 4 last blocks (`n_last_blocks=4`) is a good balance
+4. Gradient Clipping: Set to 1.0 to prevent gradient explosion
+5. Validation Interval: Validate every epoch for small datasets
 
 ##  Common Issues
 
@@ -224,19 +224,6 @@ Models are automatically saved:
 -  Try different optimizers (SGD vs AdamW)
 -  Tune SDC loss weight
 -  Check data augmentation strength
-
-##  Citation
-
-If you use this code in your research, please cite:
-
-```bibtex
-@article{oquab2023dinov3,
-  title={DINOv3: Vision Transformers at Scale},
-  author={Oquab, Maxime and others},
-  journal={arXiv preprint arXiv:2304.07193},
-  year={2023}
-}
-```
 
 ##  License
 
