@@ -18,8 +18,8 @@ A PyTorch implementation of an image classification system based on the **DINOv3
 -  **DINOv3 Backbone**: Leverages pre-trained DINOv3 ViT-B/16 for powerful feature extraction
 -  **Distributed Training**: Full DDP support for multi-GPU training
 -  **Advanced Loss Functions**: 
-  - **Combined Cross-Entropy + Supervised Contrastive Loss (SDC)
-  - **EM-based Supervised Contrastive Loss with learnable class centers
+  - Combined Cross-Entropy + Supervised Contrastive Loss (SDC)
+  - EM-based Supervised Contrastive Loss with learnable class centers
 -  **Smart Data Sampling**: Weighted sampling for handling class imbalance
 -  **Medical Image Augmentation**: Specialized augmentation pipeline for medical imaging
 -  **Comprehensive Metrics**: Top-K accuracy, F1 score, recall, and more
