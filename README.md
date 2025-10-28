@@ -242,7 +242,7 @@ For questions and feedback, please open an issue on GitHub.
 
 <div align="center">
 
-** If you find this project helpful, please consider giving it a star! **
+**If you find this project helpful, please consider giving it a star!**
 
 Made with  by the community
 
